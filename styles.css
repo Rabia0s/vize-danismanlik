@@ -1,0 +1,1585 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel arka plan ayarları */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: background-transition 12s infinite; /* 15 saniyelik geçiş süresi */
+}
+/* Arka planın ayarlanması */
+body {
+    background-image: url('https://images.pexels.com/photos/133953/pexels-photo-133953.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Sayfa yüksekliğini tamamen kaplar */
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Diğer öğeler için stil ayarları */
+#content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Yazının net görünmesi için beyaz renk */
+}
+
+/* Sayfanın yüklenmesi sırasında geçiş efekti */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* İlk açılışta gösterilecek fotoğraf */
+    background-size: cover;
+    background-position: center;
+    z-index: 9999; /* Diğer öğelerin önünde görünmesi için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Geçiş tamamlandığında loading ekranını gizle */
+#loading-screen.hidden {
+    display: none;
+}
+
+/* Diğer sayfa içeriği stilleri */
+#content {
+    padding: 20px;
+    text-align: center;
+}
+/* Vize Danışmanlık Başlığı ve Logo */
+#visa-consulting {
+    display: flex;
+    align-items: center; /* Logo ve yazıyı dikeyde ortalamak için */
+    justify-content: flex-start; /* İçeriği sola hizala */
+    margin: 20px 0;
+    flex-direction: row-reverse; /* Logo solda, başlık sağda */
+}
+
+#visa-logo {
+    height: 50px; /* Logonun yüksekliği */
+    width: auto;  /* Orantılı olarak genişlik ayarlanır */
+    margin-left: 15px; /* Logo ile başlık arasındaki mesafe */
+}
+
+#visa-consulting h1 {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+
+.moving-text {
+    position: absolute;
+    top: 250px; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    white-space: nowrap; /* Yazının kesilmemesini sağlar */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    animation: slide 33s linear infinite; /* Animasyon süresi 30 saniye */
+}
+
+/* Yazının soldan sağa kayması */
+@keyframes slide {
+    0% {
+        transform: translateX(-100%); /* Başlangıçta soldan başlar */
+    }
+    100% {
+        transform: translateX(100%); /* Bitişte sağa kaybolur */
+    }
+}
+
+/* Sosyal medya ikonları */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: #333;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color:  rgb(3, 33, 89); /* Kırmızı renkte hover efekti */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links li a:hover {
+    color:  rgb(3, 33, 89); /* Navbar linkleri hover efekti */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  
+
+  /* Genel Stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık ve Yazılar */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+/* Genel Stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık ve Yazılar */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Başvuru Durumu */
+.visa-status {
+    padding: 60px 15%;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.visa-status h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color:  rgb(3, 33, 89);
+    letter-spacing: 1px;
+}
+
+.visa-status p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Visa Başvuru Durumu Formu */
+.visa-status-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elemanları: Input ve Textarea */
+.visa-status-form input,
+.visa-status-form textarea,
+.visa-status-form button {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Input ve Textarea */
+.visa-status-form input,
+.visa-status-form textarea {
+    background-color: #f4f4f4;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    border-radius: 8px;
+    padding: 15px;
+    transition: 0.3s ease;
+}
+
+.visa-status-form input::placeholder,
+.visa-status-form textarea::placeholder {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Hover ve Focus Durumları */
+.visa-status-form input:focus,
+.visa-status-form textarea:focus {
+    outline: none;
+    border-color:  rgb(3, 33, 89);
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+    background-color: #fff;
+}
+
+/* Buton */
+.visa-status-form button {
+    background-color: rgb(3, 33, 89);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+}
+
+.visa-status-form button:hover {
+    background-color:  rgb(3, 33, 89);
+    transform: translateY(-3px);
+}
+
+.visa-status-form button:active {
+    transform: translateY(1px);
+}
+
+/* Başvuru Durumu Yanıt Mesajı */
+.visa-status-response {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    text-align: left;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.visa-status-response p {
+    margin: 0;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.visa-status-response p:last-child {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Teşekkür mesajı */
+.thank-you-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50; /* Yeşil renk */
+    font-weight: bold;
+}
+
+
+/* Yanıt mesajı görünür hale gelmeden önce gizli olması için */
+.visa-status-response.hidden {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Animasyon için Transition */
+.visa-status-response.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Form Elemanları için Genel Stil */
+.visa-status-form input,
+.visa-status-form textarea,
+.visa-status-form button {
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Placeholder Animasyonu */
+@keyframes placeholder-fade {
+    0% {
+        color: #ccc;
+    }
+    50% {
+        color:  rgb(3, 33, 89);
+    }
+    100% {
+        color: #ccc;
+    }
+}
+
+.visa-status-form input::placeholder,
+.visa-status-form textarea::placeholder {
+    animation: placeholder-fade 1s infinite;
+}
+
+
+/* Başarılar Kısmı */
+.achievements-section {
+    padding: 80px 0;
+    background-color: #1c1c1c;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.achievement-card {
+    background: linear-gradient(145deg, #00bcd4, #008c91);
+    border-radius: 20px;
+    padding: 50px 40px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInCard 1.5s ease-out forwards;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.achievement-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.achievement-description {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.achievement-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card:hover .achievement-number {
+    transform: scale(1.1);
+    color: #ffeb3b;
+}
+
+.achievement-card:hover .achievement-description {
+    transform: translateY(10px);
+    color: #fff;
+}
+
+@keyframes fadeInCard {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Her kart için gecikmeli animasyon */
+.achievement-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.achievement-card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.achievement-card:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+/* 3D Effect */
+.achievement-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.achievement-card:hover:before {
+    filter: blur(20px);
+}
+
+/* Additional lighting effect */
+.achievement-card:hover {
+    background: linear-gradient(145deg, #00bcd4, #008c91, #ffeb3b);
+}
+
+/* Parallax Scroll effect */
+.achievements-section {
+    background: url('https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center / cover no-repeat;
+    position: relative;
+    padding: 120px 0;
+    color: white;
+}
+
+.achievements-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.achievements-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Başarılar Kısmı */
+.achievements-section {
+    margin: 0; /* Boşluğu sıfırladık */
+    padding: 50px 0;
+    background-color: #f4f6f8;
+    text-align: center;
+    margin-bottom: 0; /* Başarılar kısmının alt kısmındaki boşluğu sıfırladık */
+}
+
+.feedback-button-container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Başarılarımızı Değerlendir butonu */
+#open-feedback-form-btn {
+    background-color: rgb(3, 33, 89);
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+#open-feedback-form-btn:hover {
+    background-color: #45a049;
+}
+
+/* Geri bildirim formu stil */
+.feedback-form {
+    display: none; /* Başlangıçta gizli */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sayfa arkaplanı */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form konteyneri */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Kapatma butonu */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Başlık */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Puanlama bölümü */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+
+.star:hover {
+    background-color: #FFA500; /* Hover rengi */
+    transform: scale(1.1); /* Hoverda büyüme efekti */
+}
+
+.star.selected {
+    background-color: #FFD700; /* Seçilen yıldız rengi */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Seçilen yıldızın etrafında parlama efekti */
+}
+
+.star::before {
+    content: "★";
+    font-size: 30px;
+}
+
+/* Yorum alanı */
+.textarea-container {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Teşekkür mesajı */
+.thank-you-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50; /* Yeşil renk */
+    font-weight: bold;
+}
+
+/* Gönder butonu */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Teşekkür mesajı */
+.thank-you-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50; /* Yeşil renk */
+    font-weight: bold;
+    display: none; /* Başlangıçta gizli */
+}
+
+
+/* Geri Bildirim Formu Pop-up */
+.feedback-form {
+    display: none; /* Başlangıçta gizli */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Arka planda yarı saydam siyah */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 0; /* Geri bildirim kısmının yukarı kaymasını sağlamak için */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 0; /* Formu kısmı üstten kaydırmamak için */
+}
+
+/* İki kısmın birleşmesini sağlamak için daha fazla düzenleme */
+#feedback-form {
+    margin-top: -10px; /* Formu kısmı başarılar kısmının altına yerleştiriyoruz */
+}
+
+
+
+
+
+/* Dönme animasyonu */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .success-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .success-rate {
+        padding: 50px 5%;
+    }
+}
+
+
+#history {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.history-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.history-title h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 600;
+}
+
+.history-title p {
+    font-size: 18px;
+    color: #777;
+}
+
+.history-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.history-card {
+    width: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.history-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+    }
+    .history {
+        padding: 50px 5%;
+    }
+}
+/* Tarihçemiz */
+.history {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px  rgb(3, 33, 89);
+    margin-top: 0px;
+    position: relative;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.history-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-title {
+    font-size: 3rem;
+    color:  rgb(3, 33, 89);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-out;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-item {
+    background-color: rgb(3, 33, 89);
+    width: 30%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.timeline-item:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.timeline-item:nth-child(2) {
+    animation-delay: 1s;
+}
+.timeline-item:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-image img {
+    transform: scale(1.1);
+}
+
+.timeline-content {
+    margin-top: 20px;
+}
+
+.timeline-content h3 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+    }
+    .history {
+        padding: 50px 5%;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Şeffaf siyah arka plan */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 5;
+    /* Vize Danışmanlık Başlığı ve Logo */
+#visa-consulting {
+    display: flex;
+    align-items: center; /* Logo ve yazıyı dikeyde ortalamak için */
+    justify-content: flex-start; /* İçeriği sola hizala */
+    margin: 20px 0;
+    flex-direction: row-reverse; /* Logo solda, başlık sağda */
+}
+
+#visa-logo {
+    height: 50px; /* Logonun yüksekliği */
+    width: auto;  /* Orantılı olarak genişlik ayarlanır */
+    margin-left: 15px; /* Logo ile başlık arasındaki mesafe */
+}
+
+#visa-consulting h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Services */
+.services {
+    padding: 50px 10%;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive tasarım için flex öğelerini alt satıra geçirebiliriz */
+}
+
+.card {
+    background-color: rgb(3, 33, 89);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* About Bölümü */
+.about-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section .section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+/* Adımlar */
+.about-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;  /* Aralarındaki boşluğu azaltıyoruz */
+    
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;  /* Başlangıçta gizli */
+    transform: translateY(40px);  /* Animasyon ile kayarak gelmesi */
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+    max-width: 180px;  /* Kutuların genişliğini küçültüyoruz */
+    position: relative;
+    
+}
+
+/* Her adım görünür hale geldiğinde */
+.about-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+/* Yuvarlak resimler */
+.about-circle {
+    background-color: #131098;
+    width: 95px;  /* Daireyi küçültüyoruz */
+    height: 95px;  /* Daireyi küçültüyoruz */
+    border-radius: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;  /* Daire ile metin arasındaki boşluğu küçültüyoruz */
+    position: relative;  /* Daireyi referans alacak */
+    z-index: 1;  /* Daireyi öne alıyoruz */
+    transform: translateX(30px);
+    
+     
+}
+
+.about-image {
+    width: 50px;  /* Resmi küçültüyoruz */
+    height: 50px;  /* Resmi küçültüyoruz */
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+
+.about-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;  /* Kutuları sabit boyutta yapıyoruz */
+    height: 200px;  /* Yükseklik de aynı şekilde */
+    position: relative;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+/* Başlık ve metin */
+.about-text h3 {
+    text-align: center; 
+    font-size: 18px;  /* Başlık boyutunu küçültüyoruz */
+    color: #333;
+    margin: 8px 0;  /* Başlık ile metin arasındaki boşluğu azaltıyoruz */
+    
+}
+
+.about-text p {
+    font-size: 12px;  /* Metin boyutunu küçültüyoruz */
+    color: #666;
+    
+}
+
+/* Ok animasyonu ve konumlandırma */
+.arrow {
+    font-size: 30px;  /* Ok büyüklüğünü küçültüyoruz */
+    color: #2b8a3e;
+    margin-top: 5px;  /* Ok ile daire arasındaki boşluğu küçültüyoruz */
+    opacity: 0;
+    animation: arrowAnim 0.6s forwards;
+    position: absolute;  /* Okları dairelerin yanına yerleştiriyoruz */
+    top: 20%;  /* Okları kutuların ortasına hizalayacağız */
+    left: 105%;  /* Okları kutunun ortasına yerleştireceğiz */
+    transform: translate(-50%, -50%);  /* Okları tam ortalayacağız */
+    z-index: 2;  /* Okları dairelerin önüne alıyoruz */
+    
+}
+   
+
+
+
+@keyframes arrowAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adımların hizalanmasını iyileştirmek */
+.about-item:nth-child(5) {
+    margin-bottom: 0;  /* Takip adımının altındaki boşluğu sıfırlıyoruz */
+}
+
+/* Son adımın hizalanması */
+.about-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* İletişim kısmı stilizasyonu */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: #3f51b5;
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Genel Stil - Tüm cihazlar için geçerli temel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.calculator-container {
+    width: 100%;
+    max-width: 400px; /* Maksimum genişlik 400px */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+select, input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Mobil cihazlar için stil (max-width: 600px) */
+@media (max-width: 600px) {
+    .calculator-container {
+        padding: 15px;  /* Daha küçük kenarlıklar */
+        max-width: 100%; /* Formun genişliğini ekranın tamamına yay */
+    }
+
+    h1 {
+        font-size: 24px; /* Başlık font boyutunu küçült */
+    }
+
+    label {
+        font-size: 14px;  /* Label font boyutunu küçült */
+    }
+
+    h3 {
+        font-size: 16px;  /* Fiyat metninin font boyutunu küçült */
+    }
+
+    select, input[type="checkbox"] {
+        font-size: 14px;  /* Seçim kutularının font boyutunu küçült */
+    }
+}
+
+/* Tablet cihazlar için stil (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .calculator-container {
+        padding: 20px;  /* Tablet için standart padding */
+        max-width: 90%;  /* Formu genişlet */
+    }
+
+    h1 {
+        font-size: 28px; /* Başlık font boyutunu biraz büyüt */
+    }
+
+    label {
+        font-size: 15px;  /* Label font boyutunu biraz küçült */
+    }
+
+    h3 {
+        font-size: 18px;  /* Fiyat metninin font boyutunu biraz büyüt */
+    }
+
+    select, input[type="checkbox"] {
+        font-size: 15px;  /* Seçim kutularının font boyutunu biraz büyüt */
+    }
+}
+
+/* Masaüstü ve geniş ekranlar için stil (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .calculator-container {
+        padding: 20px;  /* Büyük ekranlar için padding */
+        max-width: 500px;  /* Daha geniş bir form */
+    }
+
+    h1 {
+        font-size: 32px;  /* Başlık font boyutunu büyüt */
+    }
+
+    label {
+        font-size: 16px;  /* Standart font boyutu */
+    }
+
+    h3 {
+        font-size: 20px;  /* Fiyat metninin font boyutunu biraz büyüt */
+    }
+
+    select, input[type="checkbox"] {
+        font-size: 16px;  /* Seçim kutularının font boyutunu biraz büyüt */
+    }
+}
+
+
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+/* İletişim */
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+
+
+/* Tüm Hakları Saklıdır 2024 */
+.rights {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.rights p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#contact {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0055a5;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+    .card-container {
+        justify-content: center;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+    }
+
+    .services {
+        padding: 50px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+#copyright {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.logo {
+    font-size: 1.5em; /* C harfi logosunun boyutunu ayarlıyoruz */
+    margin-right: 10px; /* Logo ve yazı arasındaki boşluk */
+}
+
+.copyright-text {
+    font-size: 1.2em;
+}

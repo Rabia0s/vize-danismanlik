@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vize Danışmanlık Şirketi</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive tasarım için -->
+
+
+    <!DOCTYPE html>
+    <html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    </body>
+    </html>
+    
+
+
+
+
+    <title>Web Projesi</title>
+    <style>
+        /* Temel stiller */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+         /* Arka Plan Fotoğrafı */
+            #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://md.teyit.org/2024/08/ucakturbulans.webp'); /* İstediğiniz fotoğraf */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        
+        /* Yazıların Okunabilirliğini Artırmak İçin Arka Plan */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+            z-index: -1;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* Form stilleri */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color:  rgb(3, 33, 89);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+         
+    </style>
+</head>
+
+  
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <!-- Vize Danışmanlık Başlığı ve Logo -->
+<div id="visa-consulting">
+  <h1>Vize Danışmanlık</h1>
+  <img src="https://www.elegancevize.com/wp-content/uploads/2024/08/cropped-elegancevize-logo.png" alt="Vizego Logo" id="visa-logo">
+</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Ana Sayfa</a></li>
+      <li><a href="#services">Hizmetler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+      <li><a href="#about">Destek</a></li>
+    </ul>
+  </nav>
+
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Vize Danışmanlık Hizmetleri</h1>
+      <p>Vize başvurularında profesyonel rehberlik!</p>
+    </div>
+    <!-- Hareketli Yazı -->
+    <div id="moving-text" class="moving-text">
+      
+    </div>
+</section>
+
+
+  <!-- Hizmetler -->
+  <section id="services" class="services">
+    <h2>Hizmetlerimiz</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://image.milimaj.com/i/milliyet/75/869x477/66d4e1f070687e0899cc002d.jpg" alt="Hizmet 1" class="card-img">
+        <div class="card-body">
+          <h3>Turist Vizesi</h3>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.prod.website-files.com/5db19236083f4b42bea1dbe5/6229d6edb67401debb7f578c_calisan-deneyimi.png" alt="Hizmet 2" class="card-img">
+        <div class="card-body">
+          <h3>Çalışma Vizesi</h3>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.mngturizm.com/upload/blog/ingiltere-blog/big-ben-saat-kulesi.jpg" alt="Hizmet 3" class="card-img">
+        <div class="card-body">
+          <h3>İngiltere Vizesi</h3>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+ <!-- Vize Başvuru Durumu Takibi -->
+<section id="visa-status" class="visa-status">
+  <h2>Vize Başvuru Durumu Takibi</h2>
+  <p>Başvurunuzun durumunu öğrenmek için aşağıdaki formu doldurun.</p>
+  <form id="visa-status-form">
+    <input type="text" id="applicant-name" placeholder="Adınız" required>
+    <input type="email" id="applicant-email" placeholder="E-posta Adresiniz" required>
+    <input type="text" id="application-number" placeholder="Başvuru Numarası" required>
+    <button type="submit">Durumu Kontrol Et</button>
+  </form>
+  <div id="visa-status-response" class="visa-status-response" style="display:none;">
+    <p><strong>Başvurunuz başarıyla kaydedildi ve şu an inceleniyor!</strong></p>
+    <p>Başvuru durumunuz hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+  </div>
+</section>
+
+
+<section id="about" class="about-section">
+  <div class="container">
+  <h2 class="section-title">Size Nasıl Destek Olacağız?</h2>
+  <div class="about-items">
+  <div class="about-item">
+  <div class="about-circle">
+  <img src="https://www.shutterstock.com/image-vector/vibration-mode-icon-phone-vibrating-600nw-2479501761.jpg" alt="İlk Görüşme" class="about-image">
+  </div>
+  <div class="about-text">
+  <h3>İlk Görüşme</h3>
+  <p>Uzmanlarımızla ücretsiz danışmanlık görüşmesi.</p>
+  </div>
+  <div class="arrow">&#8594;</div>
+  </div>
+
+  <div class="about-item">
+  <div class="about-circle">
+  <img src="https://www.shutterstock.com/image-vector/flat-design-checklist-icon-isolated-600nw-1013639575.jpg" alt="Değerlendirme" class="about-image">
+  </div>
+  <div class="about-text">
+  <h3>Değerlendirme</h3>
+  <p>Başvurunuzun detaylı analizi.</p>
+  </div>
+  <div class="arrow">&#8594;</div>
+  </div>
+
+  <div class="about-item">
+  <div class="about-circle">
+  <img src="https://i.pinimg.com/736x/cc/ff/60/ccff6049e906fb0e1f5babe20db1a065.jpg" alt="Evrak Hazırlığı" class="about-image">
+  </div>
+  <div class="about-text">
+  <h3>Evrak Hazırlığı</h3>
+  <p>Gerekli belgelerin hazırlanması.</p>
+  </div>
+  <div class="arrow">&#8594;</div>
+  </div>
+
+  <div class="about-item">
+  <div class="about-circle">
+  <img src="https://static.vecteezy.com/system/resources/previews/007/683/528/non_2x/calendar-calendar-icon-calendar-icon-simple-sign-calendar-symbol-free-vector.jpg" alt="Başvuru" class="about-image">
+  </div>
+  <div class="about-text">
+  <h3>Başvuru</h3>
+  <p>Vize başvurusunun yapılması.</p>
+              </div>
+              <div class="arrow">&#8594;</div>
+          </div>
+
+          <div class="about-item">
+          <div class="about-circle">
+                  <img src="https://www.shutterstock.com/image-vector/check-mark-icon-logo-260nw-762494977.jpg" alt="Takip" class="about-image">
+           </div>
+           <div class="about-text">
+           <h3>Takip</h3>
+           <p>Başvuru sürecinin takibi.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+ 
+<section id="achievements" class="achievements-section">
+  <div class="achievements-container">
+      <div class="achievement-card">
+          <h3 id="consultant-count" class="achievement-number">15.000</h3>
+          <p class="achievement-description">Danışman</p>
+      </div>
+      <div class="achievement-card">
+          <h3 id="satisfaction-rate" class="achievement-number">%98</h3>
+          <p class="achievement-description">Memnuniyet Oranı</p>
+      </div>
+      <div class="achievement-card">
+          <h3 id="approval-rate" class="achievement-number">%95</h3>
+          <p class="achievement-description">Vize Onay Oranı</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+ <!-- Başarılarımızı Değerlendir Butonu -->
+<button id="open-feedback-form-btn">Başarılarımızı Değerlendir</button>
+
+<!-- Geri Bildirim Formu Pop-up -->
+<div id="feedback-form" class="feedback-form">
+    <div class="form-container">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <h2>Başarılarımızı Değerlendir</h2>
+        <p>Lütfen başarılarımızla ilgili geri bildiriminizi bırakın:</p>
+        <form id="feedback-form-submit">
+            <div class="rating">
+                <label for="rating">Puan Verin: </label>
+                <div class="star" data-value="1"></div>
+                <div class="star" data-value="2"></div>
+                <div class="star" data-value="3"></div>
+                <div class="star" data-value="4"></div>
+                <div class="star" data-value="5"></div>
+            </div>
+            <div class="textarea-container">
+                <textarea id="feedback-text" placeholder="Yorum yapın..." rows="4"></textarea>
+            </div>
+            <button type="button" id="submit-feedback-btn">Gönder</button>
+        </form>
+        <div id="thank-you-message" class="thank-you-message" style="display: none;">
+            <h3>Teşekkür Ederiz! Geri bildiriminiz alındı.</h3>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<section id="history">
+  <div class="history-title">
+      <h2>Tarihçemiz</h2>
+      <p>Vize Danışmanlık Hizmetlerimizin Zaman İçindeki Gelişimi</p>
+  </div>
+  <div class="history-cards">
+      <div class="history-card">
+          <div class="card-icon">
+              <img src="https://blog.experlize.com/wp-content/uploads/2020/11/danisman.jpg" alt="Icon 1">
+          </div>
+          <div class="card-content">
+              <h3>İlk Danışmanlık</h3>
+              <p>İlk danışmanlık görüşmemiz başladı ve birçok kişiye yardımcı olduk.</p>
+          </div>
+      </div>
+      <div class="history-card">
+          <div class="card-icon">
+              <img src="https://uploads.mikro.com.tr/hizmet_sozlesmesi_nedir_69833139aa_90c5fba7c4.webp" alt="Icon 2">
+          </div>
+          <div class="card-content">
+              <h3>Gelişen Hizmetler</h3>
+              <p>Hizmetlerimizi genişleterek daha fazla insanın ihtiyacını karşıladık.</p>
+          </div>
+      </div>
+      <div class="history-card">
+          <div class="card-icon">
+              <img src="https://localcdn.momento.com.tr/Uploads/Page/f461376d-0e11-435d-b9b0-8db5973fbdcd.png" alt="Icon 3">
+          </div>
+          <div class="card-content">
+              <h3>Başarılar</h3>
+              <p>Başarıyla tamamlanan vize başvuruları ve memnun müşteriler.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+ 
+
+
+
+
+
+  <!-- İletişim -->
+  <section id="contact" class="contact">
+    <h2>Size Geri Dönelim</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Adınız" required>
+      <input type="text" id="surname" placeholder="Soyadınız" required>
+      <input type="text" id="request" placeholder="Başvurmak istediğiniz vize " required>
+      <input type="email" id="email" placeholder="E-posta" required>
+      <textarea id="message" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+
+<!-- İletişim Bölümü -->
+<section id="contact" class="contact-section">
+  <div class="container">
+      <h2>İletişim</h2>
+      <p>Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz.</p>
+
+      <div class="contact-info">
+          <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Adres</h3>
+              <p>İzmir, Türkiye</p>
+          </div>
+          <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Telefon</h3>
+              <p>(+90) 506 244 74 40</p>
+          </div>
+          <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>rsevim006@gmail.com
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- Sosyal Medya Bağlantıları -->
+<div class="social-media">
+  <a href="https://www.facebook.com" target="_blank" class="social-icon">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" class="social-icon">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+
+
+
+
+
+
+  <!-- Tüm Hakları Saklıdır ve Bize Ulaşın Kısımları -->
+<section id="rights" class="rights">
+  <div class="rights-content">
+      
+      <section id="copyright">
+        <div class="copyright-content">
+            <span class="logo">&#169;</span>
+            <span class="copyright-text">Tüm Hakları Saklıdır</span>
+        </div>
+    </section>
+    
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
